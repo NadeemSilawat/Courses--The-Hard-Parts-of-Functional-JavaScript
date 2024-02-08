@@ -41,3 +41,53 @@ remarkable rang of tasks -- */
 // const summed = reduce([1, 2, 3], add, 0);
 
 // -- Should be called 'reduce from 2 things to 1 repeatedly, inside'
+
+
+
+
+// JavaScript has a built-in version of reduce available to all arrays
+
+    // const add = (a, b) => a + b
+    // const summed = reduce([1, 2, 3], add, 0) 
+
+    // const add = (a, b) => a + b
+// const summed = [1, 2, 3].reduce(add, 0) 
+
+
+
+
+/*********************************************************************/
+
+
+
+
+// ~~ map, forEach, filter, flatMap, reduce, reduceRight
+// ~~ All 'iterate' through each element of the array and run a function on each
+// ~~ But behave differently- MDN guides us
+
+// const array = [1, 2, 3, 4, 5, 6];
+
+// const greaterThen2 = num => num > 2;
+
+// const filteredArray = array.filter(greaterThen2); // [ 3,4,5,6 ]
+
+// console.log(filteredArray)
+
+
+
+/*********************************************************************/
+
+
+
+/* -- And we can 'chain' these higher order function - pass the
+output of one as the onput of the next  -- */
+
+// const array = [1, 2, 3, 4, 5, 6];
+// const greaterThen2 = num => num > 2;
+// const add = (a, b) => a + b;
+
+// const sumOfGreaterThen2 = array.filter(greaterThen2).reduce(add, 0);
+
+// console.log(sumOfGreaterThen2)
+
+
