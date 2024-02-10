@@ -17,10 +17,10 @@
 
 
 
-// ========== Function Composition Review ========== //
+// /////////////  Function Composition Review //////////// //
 
-/* -- Listing out our 'lines of code'(functions) by name with each one's consequence
-      limited to only affect the next 'line' (function call/ invocation) -- */
+/* Listing out our 'lines of code'(functions) by name with each one's consequence
+      limited to only affect the next 'line' (function call/ invocation) */
 
 const multiplyBy2 = x => x * 2;
 const add3 = x => x + 3;
@@ -45,3 +45,4 @@ const output = reduce([
 ],
     runFunctionOnInput, 11
 );
+console.log(output);
