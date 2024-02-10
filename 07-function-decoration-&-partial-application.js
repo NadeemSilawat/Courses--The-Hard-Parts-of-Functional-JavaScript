@@ -40,7 +40,7 @@ function prefillFunction(fn, prefilledValue){
     return inner
 }
 
-const multiplyBy2  = prefillFunction(multiply)
+const multiplyBy2  = prefillFunction(multiply,2)
 const result  = multiplyBy2(5)
 
 console.log("result", result);
